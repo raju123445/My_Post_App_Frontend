@@ -1,5 +1,5 @@
 ## MYTaskAPP
-
+Built a Scalable Post App with Authentication & Dashboard, including a basic backend to facilitate API requests
 ---
 
 ## Table of contents
