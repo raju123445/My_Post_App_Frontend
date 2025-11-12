@@ -1,0 +1,94 @@
+scalable-mern-dashboard/
+│
+├── frontend/                 # React + Tailwind Frontend
+│   ├── public/
+│   │   ├── index.html
+│   │   └── favicon.ico
+│   │
+│   ├── src/
+│   │   ├── assets/           # Images, icons, etc.
+│   │   ├── components/       # Reusable UI components
+│   │   │   ├── Navbar.jsx
+│   │   │   ├── Sidebar.jsx
+│   │   │   ├── Loader.jsx
+│   │   │   ├── ToastMessage.jsx
+│   │   │   ├── ProtectedRoute.jsx
+│   │   │   └── ThemeToggle.jsx
+│   │   │
+│   │   ├── pages/            # Main page components
+│   │   │   ├── Home.jsx
+│   │   │   ├── Login.jsx
+│   │   │   ├── Register.jsx
+│   │   │   ├── Dashboard.jsx
+│   │   │   ├── Profile.jsx
+│   │   │   └── NotFound.jsx
+│   │   │
+│   │   ├── context/          # Global State (Zustand or Redux)
+│   │   │   ├── authStore.js
+│   │   │   └── themeStore.js
+│   │   │
+│   │   ├── services/         # API service layer (Axios calls)
+│   │   │   ├── api.js
+│   │   │   ├── authService.js
+│   │   │   ├── postService.js
+│   │   │   └── userService.js
+│   │   │
+│   │   ├── utils/            # Helper functions
+│   │   │   ├── validators.js
+│   │   │   └── constants.js
+│   │   │
+│   │   ├── styles/           # Tailwind & global styles
+│   │   │   ├── index.css
+│   │   │   └── tailwind.css
+│   │   │
+│   │   ├── App.jsx
+│   │   ├── main.jsx
+│   │   └── index.js
+│   │
+│   ├── .env.example          # Example environment file (VITE_API_URL)
+│   ├── tailwind.config.js
+│   ├── vite.config.js
+│   ├── package.json
+│   └── README.md
+│
+├── backend/                  # Express + MongoDB Backend
+│   ├── config/               # Database and environment setup
+│   │   └── db.js
+│   │
+│   ├── controllers/          # Controller logic (business rules)
+│   │   ├── authController.js
+│   │   ├── userController.js
+│   │   └── postController.js
+│   │
+│   ├── models/               # Mongoose schemas
+│   │   ├── User.js
+│   │   └── Post.js
+│   │
+│   ├── routes/               # API routes
+│   │   ├── authRoutes.js
+│   │   ├── userRoutes.js
+│   │   └── postRoutes.js
+│   │
+│   ├── middleware/           # Custom middleware
+│   │   ├── authMiddleware.js     # JWT verification
+│   │   ├── roleMiddleware.js     # Role-based access
+│   │   ├── errorMiddleware.js    # Centralized error handler
+│   │   └── validateMiddleware.js # Request validation
+│   │
+│   ├── utils/                # Helper functions (tokens, logger)
+│   │   ├── generateToken.js
+│   │   ├── logger.js
+│   │   └── responseHandler.js
+│   │
+│   ├── validations/          # Request body validation (Joi/Zod)
+│   │   ├── authValidation.js
+│   │   └── postValidation.js
+│   │
+│   ├── .env.example          # Example backend env vars
+│   ├── server.js             # Entry point
+│   ├── package.json
+│   └── README.md
+│
+├── postman_collection.json   # Optional: API documentation
+├── .gitignore
+└── README.md                 # Project overview (for recruiters)
