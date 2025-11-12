@@ -1,0 +1,8 @@
+logger.js:40 [05:50:58] [DEBUG] [AUTH] Loading user from token
+installHook.js:1 [05:50:58] [DEBUG] [AUTH] Loading user from token
+logger.js:41 [05:50:58] [INFO] [AUTH] User loaded successfully Object
+logger.js:47 [05:50:58] [DEBUG] [POSTS] Fetching posts
+installHook.js:1 [05:50:58] [DEBUG] [POSTS] Fetching posts
+logger.js:41 [05:50:58] [INFO] [AUTH] User loaded successfully Object
+logger.js:48 [05:50:58] [INFO] [POSTS] Posts fetched Object
+logger.js:48 [05:50:58] [INFO] [POSTS] Posts fetched Object

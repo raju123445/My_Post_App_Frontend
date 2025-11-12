@@ -3,6 +3,9 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const rateLimit = require('express-rate-limit');
 const helmet = require('helmet');
+const morgan = require("morgan");
+const fs = require("fs");
+const path = require("path");
 
 require('dotenv').config();
 
@@ -15,6 +18,10 @@ const userRoutes = require('./routes/userRoutes');
 const postRoutes = require('./routes/postRoutes');
 
 const app = express();
+
+
+const accessLogStream = fs.createWriteStream(path.join(__dirname, "logs", "access.log"), { flags: "a" });
+app.use(morgan('combined', { stream: accessLogStream }));
 
 // Security middleware
 app.use(helmet()); // Set security headers

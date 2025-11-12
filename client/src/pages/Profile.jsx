@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { useAuthStore } from '../context/authStore';
+import { useEffect, useState } from 'react';
 import Loader from '../components/Loader';
+import { useAuthStore } from '../context/authStore';
 
 const Profile = () => {
   const { user, loading, updateProfile } = useAuthStore();
@@ -46,6 +46,7 @@ const Profile = () => {
         {isEditing ? (
           <form onSubmit={handleSubmit}>
             <div className="mb-4">
+              
               <label className="block text-gray-700 dark:text-gray-300 mb-2" htmlFor="name">
                 Name
               </label>
@@ -115,8 +116,13 @@ const Profile = () => {
         ) : (
           <div>
             <div className="flex items-center mb-6">
-              <div className="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16" />
-              <div className="ml-4">
+              {/* <div className="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16" /> */}
+              <div className="w-12 h-12 rounded-xl overflow-hidden">
+                    <img
+                        src="https://avatar.iran.liara.run/public/31"
+                        alt="User Avatar"
+                        className="w-full h-full object-cover"
+                    />
                 <h2 className="text-xl font-semibold text-gray-800 dark:text-white">{user?.name}</h2>
                 <p className="text-gray-600 dark:text-gray-300 capitalize">{user?.role}</p>
               </div>
