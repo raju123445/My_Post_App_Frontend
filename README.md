@@ -64,7 +64,7 @@ Below are selected screenshots from the running application (files are in the `s
 - Frontend: React, Vite
 - Backend: Node.js, Express
 - Database: MongoDB (Mongoose)
-- Styling: CSS / (project may include Tailwind or custom CSS)
+- Styling: TailwindCSS
 
 ---
 
@@ -153,9 +153,3 @@ Contributions are welcome. Please follow these steps:
 This project is provided under the MIT License. See the `LICENSE` file for details.
 
 ---
-
-If you'd like, I can also:
-
-- Add a small preview GIF or optimized thumbnails in `screenshots/`.
-- Create a `docs/` folder with step-by-step deployment notes.
-
